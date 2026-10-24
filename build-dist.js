@@ -2,7 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-console.log('--> Step 1: Building frontend with Vite...');
+console.log('--> Step 1: Installing frontend dependencies and building with Vite...');
+execSync('npm install', { cwd: path.join(__dirname, 'frontend'), stdio: 'inherit' });
 execSync('npm run build', { cwd: path.join(__dirname, 'frontend'), stdio: 'inherit' });
 
 console.log('--> Step 2: Syncing output directories for Vercel...');
