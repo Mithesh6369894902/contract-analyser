@@ -1,0 +1,62 @@
+========================================
+  INSTALL ON YOUR PHONE (Android/iPhone)
+========================================
+
+This app works like an APK - install it directly on your phone!
+
+STEP 1: Start the App on Your Computer
+---------------------------------------
+Double-click: start-app.bat
+
+STEP 2: Find Your Computer's IP Address
+-----------------------------------------
+Open Command Prompt and type: ipconfig
+
+Look for "IPv4 Address" - it looks like: 192.168.1.xxx
+
+STEP 3: Connect Your Phone
+----------------------------
+Make sure your phone is on the SAME WiFi as your computer.
+
+STEP 4: Open Phone Browser
+----------------------------
+Type in browser: http://192.168.1.xxx:3000
+(Replace with your actual IP address)
+
+STEP 5: Install as App
+------------------------
+
+For Android (Chrome):
+  1. Tap the 3 dots menu (top right)
+  2. Tap "Add to Home screen" or "Install app"
+  3. Tap "Install"
+  4. App appears on your home screen!
+
+For iPhone (Safari):
+  1. Tap the Share button (square with arrow)
+  2. Scroll down and tap "Add to Home Screen"
+  3. Tap "Add"
+  4. App appears on your home screen!
+
+========================================
+  STORAGE - NO CLOUD NEEDED!
+========================================
+
+Your data is stored locally on your computer:
+- Uploaded contracts: backend/uploads/
+- Analysis data: backend/data/
+
+Everything stays on YOUR machine - no cloud storage required!
+
+========================================
+  REQUIREMENTS
+========================================
+
+- Computer and phone on same WiFi
+- Node.js installed on computer
+- That's it! No API keys needed for basic analysis
+
+For AI-powered analysis (optional, free):
+- Install Ollama: https://ollama.ai/download
+- Run: ollama pull llama2
+- Run: ollama serve
